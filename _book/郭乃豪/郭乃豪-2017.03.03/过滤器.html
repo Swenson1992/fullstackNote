@@ -1,0 +1,835 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>郭乃豪-AngularJS过滤器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../目录/第13周.html" />
+    
+    
+    <link rel="prev" href="../../王利银/王利银-2017.03.03/autocomplete.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../目录/安排.html">
+            
+                <a href="../../目录/安排.html">
+            
+                    
+                    课表安排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../目录/第1周.html">
+            
+                <a href="../../目录/第1周.html">
+            
+                    
+                    第1周(2016-12-02)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../郭乃豪-2016.12.02/理解AngularJS.html">
+            
+                <a href="../郭乃豪-2016.12.02/理解AngularJS.html">
+            
+                    
+                    郭乃豪-理解AngularJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../宋健/宋健-2016.12.02/初识NodeJS.html">
+            
+                <a href="../../宋健/宋健-2016.12.02/初识NodeJS.html">
+            
+                    
+                    宋健-初识NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../目录/第2周.html">
+            
+                <a href="../../目录/第2周.html">
+            
+                    
+                    第2周(2016-12-09)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../王利银/王利银-2016.12.09/css优先级规则.html">
+            
+                <a href="../../王利银/王利银-2016.12.09/css优先级规则.html">
+            
+                    
+                    王利银-css优先级规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../刘沈/刘沈-2016.12.09/scope-old.html">
+            
+                <a href="../../刘沈/刘沈-2016.12.09/scope-old.html">
+            
+                    
+                    刘沈-scope(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../目录/第3周.html">
+            
+                <a href="../../目录/第3周.html">
+            
+                    
+                    第3周(2016-12-16)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../刘沈/刘沈-2016.12.16/scope.html">
+            
+                <a href="../../刘沈/刘沈-2016.12.16/scope.html">
+            
+                    
+                    刘沈-scope(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../宋健/宋健-2016.12.16/javascript之闭包.html">
+            
+                <a href="../../宋健/宋健-2016.12.16/javascript之闭包.html">
+            
+                    
+                    宋健-javascript之闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../目录/第4周.html">
+            
+                <a href="../../目录/第4周.html">
+            
+                    
+                    第4周(2016-12-23)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../郭乃豪-2016.12.23/Bootstrap_CSS.html">
+            
+                <a href="../郭乃豪-2016.12.23/Bootstrap_CSS.html">
+            
+                    
+                    郭乃豪-Bootstrap_CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../宋健/宋健-2016.12.23/javascript作用域.html">
+            
+                <a href="../../宋健/宋健-2016.12.23/javascript作用域.html">
+            
+                    
+                    宋健-javascript作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../目录/第5周.html">
+            
+                <a href="../../目录/第5周.html">
+            
+                    
+                    第5周(2016-12-30)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../何纪成/何纪成-2016.12.30/canvas.html">
+            
+                <a href="../../何纪成/何纪成-2016.12.30/canvas.html">
+            
+                    
+                    何纪成-canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../目录/第6周.html">
+            
+                <a href="../../目录/第6周.html">
+            
+                    
+                    第6周(2017-01-06)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../刘沈/刘沈-2017.01.06/拖拽.html">
+            
+                <a href="../../刘沈/刘沈-2017.01.06/拖拽.html">
+            
+                    
+                    刘沈-拖拽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../王利银/王利银-2017.01.06/css小技巧.html">
+            
+                <a href="../../王利银/王利银-2017.01.06/css小技巧.html">
+            
+                    
+                    王利银-css小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../目录/第7周.html">
+            
+                <a href="../../目录/第7周.html">
+            
+                    
+                    第7周(2017-01-13)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../郭乃豪-2017.01.13/AngularJS_Promise_$q服务.html">
+            
+                <a href="../郭乃豪-2017.01.13/AngularJS_Promise_$q服务.html">
+            
+                    
+                    郭乃豪-AngularJS_Promise $q服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../王利银/王利银-2017.01.13/js_捕捉法与冒泡法.html">
+            
+                <a href="../../王利银/王利银-2017.01.13/js_捕捉法与冒泡法.html">
+            
+                    
+                    王利银-js_捕捉法与冒泡法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../目录/第8周.html">
+            
+                <a href="../../目录/第8周.html">
+            
+                    
+                    第8周(2017-01-20)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../王利银/王利银-2017.01.20/清除浮动.html">
+            
+                <a href="../../王利银/王利银-2017.01.20/清除浮动.html">
+            
+                    
+                    王利银-清除浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../目录/第9周.html">
+            
+                <a href="../../目录/第9周.html">
+            
+                    
+                    第9周(2017-02-10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../刘沈/刘沈-2017.02.10/$watch.html">
+            
+                <a href="../../刘沈/刘沈-2017.02.10/$watch.html">
+            
+                    
+                    刘沈-$watch观察模型变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../宋健/宋健-2017.02.10/kafka-node.html">
+            
+                <a href="../../宋健/宋健-2017.02.10/kafka-node.html">
+            
+                    
+                    宋健-Kafka与nodejs交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../目录/第10周.html">
+            
+                <a href="../../目录/第10周.html">
+            
+                    
+                    第10周(2017-02-17)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../王利银/王利银-2017.02.17/this与$scope.html">
+            
+                <a href="../../王利银/王利银-2017.02.17/this与$scope.html">
+            
+                    
+                    王利银-angularjs里this与$scope的比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../郭乃豪-2017.02.17/Redis及ioredis入门.html">
+            
+                <a href="../郭乃豪-2017.02.17/Redis及ioredis入门.html">
+            
+                    
+                    郭乃豪-Redis及ioredis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../目录/第11周.html">
+            
+                <a href="../../目录/第11周.html">
+            
+                    
+                    第11周(2017-02-24)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../刘沈/刘沈-2017.02.24/$on监听.html">
+            
+                <a href="../../刘沈/刘沈-2017.02.24/$on监听.html">
+            
+                    
+                    刘沈-$on监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../宋健/宋健-2017.02.24/NodeJs之数据采集器.html">
+            
+                <a href="../../宋健/宋健-2017.02.24/NodeJs之数据采集器.html">
+            
+                    
+                    宋健-NodeJs数据采集器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../目录/第12周.html">
+            
+                <a href="../../目录/第12周.html">
+            
+                    
+                    第12周(2017-03-03)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../王利银/王利银-2017.03.03/autocomplete.html">
+            
+                <a href="../../王利银/王利银-2017.03.03/autocomplete.html">
+            
+                    
+                    王利银-HTML5form表单_autocomplete属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14.2" data-path="过滤器.html">
+            
+                <a href="过滤器.html">
+            
+                    
+                    郭乃豪-AngularJS过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../目录/第13周.html">
+            
+                <a href="../../目录/第13周.html">
+            
+                    
+                    第13周(2017-03-10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../刘沈/刘沈-2017.03.10/moment.html">
+            
+                <a href="../../刘沈/刘沈-2017.03.10/moment.html">
+            
+                    
+                    刘沈-Moment.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../宋健/宋健-2017.03.10/NodeJs内存监控.html">
+            
+                <a href="../../宋健/宋健-2017.03.10/NodeJs内存监控.html">
+            
+                    
+                    宋健-NodeJs内存监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >郭乃豪-AngularJS过滤器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8FC7;&#x6EE4;&#x5668;">&#x8FC7;&#x6EE4;&#x5668;</h1>
+<h2 id="1-angularjs-&#x8FC7;&#x6EE4;&#x5668;">1. AngularJS &#x8FC7;&#x6EE4;&#x5668;</h2>
+<p>&#x8FC7;&#x6EE4;&#x5668;&#x5C06;&#x6570;&#x636E;&#x5728;&#x88AB;&#x6307;&#x4EE4;&#x5904;&#x7406;&#x5E76;&#x663E;&#x793A;&#x5230;&#x89C6;&#x56FE;&#x4E2D;&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x4FEE;&#x6539;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x539F;&#x6709;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x6837;&#x80FD;&#x591F;&#x5141;&#x8BB8;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x4EE5;&#x4E0D;&#x540C;&#x5F62;&#x5F0F;&#x5F97;&#x4EE5;&#x5C55;&#x793A;&#x3002;AngularJS&#x5185;&#x7F6E;&#x4E86;&#x4E00;&#x4E9B;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#xFF1A;currency(&#x8D27;&#x5E01;)&#x3001;date(&#x65E5;&#x671F;)&#x3001;filter(&#x5B50;&#x4E32;&#x5339;&#x914D;)&#x3001;json(&#x683C;&#x5F0F;&#x5316;json&#x5BF9;&#x8C61;)&#x3001;limitTo(&#x9650;&#x5236;&#x4E2A;&#x6570;)&#x3001;lowercase(&#x5C0F;&#x5199;)&#x3001;uppercase(&#x5927;&#x5199;)&#x3001;number(&#x6570;&#x5B57;)&#x3001;orderBy(&#x6392;&#x5E8F;)&#x3002;&#x603B;&#x5171;&#x4E5D;&#x79CD;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C31;&#x5F3A;&#x5927;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x4EFB;&#x4F55;&#x8981;&#x6C42;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x3002;   </p>
+<h2 id="2-&#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x4E24;&#x79CD;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">2. &#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x4E24;&#x79CD;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2>
+<h3 id="21-&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528;">2.1 &#x5728;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528;</h3>
+<pre><code>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728; {{}} &#x4E2D;&#x4F7F;&#x7528;filter&#xFF0C;&#x8DDF;&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x540E;&#x9762;&#x7528; | &#x5206;&#x5272;&#x3002;
+</code></pre><p>&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x8D27;&#x5E01;&#x8FC7;&#x6EE4;&#x5668;&#xFF1A;<br><img src="&#x8D27;&#x5E01;_code.png" alt="&#x8D27;&#x5E01;"><br>&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;<br><img src="&#x8D27;&#x5E01;.png" alt="&#x8D27;&#x5E01;">   </p>
+<h3 id="22-&#x5728;controller&#x548C;service&#x4E2D;&#x4F7F;&#x7528;">2.2 &#x5728;controller&#x548C;service&#x4E2D;&#x4F7F;&#x7528;</h3>
+<p>&#x6211;&#x4EEC;&#x7684;js&#x4EE3;&#x7801;&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x719F;&#x6089;&#x7684;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x8981;&#x5728;controller&#x4E2D;&#x4F7F;&#x7528;currency&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x53EA;&#x9700;&#x5C06;&#x5B83;&#x6CE8;&#x5165;&#x5230;&#x8BE5;controller&#x4E2D;&#x5373;&#x53EF;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;<br><img src="example_code.png" alt="&#x8D27;&#x5E01;"><br>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;<br><img src="&#x8D27;&#x5E01;2.png" alt="&#x8D27;&#x5E01;">   </p>
+<h2 id="3-&#x5185;&#x7F6E;&#x8FC7;&#x6EE4;&#x5668;">3. &#x5185;&#x7F6E;&#x8FC7;&#x6EE4;&#x5668;</h2>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x51E0;&#x79CD;&#x76F8;&#x5BF9;&#x5B9E;&#x7528;&#x4E00;&#x70B9;&#x7684;&#x5185;&#x7F6E;&#x8FC7;&#x6EE4;&#x5668;&#x3002;   </p>
+<h3 id="31-currency-&#x8D27;&#x5E01;&#x5904;&#x7406;">3.1 currency (&#x8D27;&#x5E01;&#x5904;&#x7406;)</h3>
+<p>&#x4F7F;&#x7528;currency&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x5B57;&#x683C;&#x5F0F;&#x5316;&#x4E3A;&#x8D27;&#x5E01;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x4F20;&#x5165;&#x6240;&#x9700;&#x7684;&#x7B26;&#x53F7;&#xFF0C;&#x4F8B;&#x5982;&#x4F20;&#x5165;&#x4EBA;&#x6C11;&#x5E01;&#xFF1A;</p>
+<pre><code>{{num | currency : &apos;&#xFFE5;&apos;}}
+</code></pre><h3 id="32-date-&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x5316;">3.2 date (&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x5316;)</h3>
+<p>date&#x8FC7;&#x6EE4;&#x5668;&#x57FA;&#x672C;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x4E00;&#x822C;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x8981;&#x6C42;&#x3002;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="date_code.png" alt="date"><br>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;<br><img src="date.png" alt="date">    </p>
+<p>&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x6240;&#x8981;&#x7684;&#x683C;&#x5F0F;&#xFF0C;y M d h m s E &#x5206;&#x522B;&#x8868;&#x793A; &#x5E74; &#x6708; &#x65E5; &#x65F6; &#x5206; &#x79D2; &#x661F;&#x671F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x7EC4;&#x5408;&#x5B83;&#x4EEC;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x4E2A;&#x6570;&#x6765;&#x9650;&#x5236;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x4F4D;&#x6570;&#x3002;&#x53E6;&#x5916;&#x53C2;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F8B;&#x5982;&#x201C;shortTime&#x201D;&#x5C06;&#x4F1A;&#x628A;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x4E3A; 12:05 pm&#x8FD9;&#x6837;&#x7684;&#x3002;   </p>
+<h3 id="33-limitto&#x9650;&#x5236;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;">3.3 limitTo(&#x9650;&#x5236;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;)</h3>
+<p>limitTo&#x8FC7;&#x6EE4;&#x5668;&#x7528;&#x6765;&#x622A;&#x53D6;&#x6570;&#x7EC4;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x622A;&#x53D6;&#x7684;&#x957F;&#x5EA6;&#x3002;   </p>
+<pre><code>{{ childrenArray | limitTo : 2 }}  //&#x5C06;&#x4F1A;&#x663E;&#x793A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x524D;&#x4E24;&#x9879;
+</code></pre><h3 id="34-orderby&#x6392;&#x5E8F;">3.4 orderBy(&#x6392;&#x5E8F;)</h3>
+<p>orderBy&#x8FC7;&#x6EE4;&#x5668;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#xFF0C;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;&#x4EE5;&#x8BE5;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5B9A;&#x4E49;&#x6392;&#x5E8F;&#x5C5E;&#x6027;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;&#x4F9D;&#x6B21;&#x6309;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF08;&#x82E5;&#x6309;&#x7B2C;&#x4E00;&#x9879;&#x6BD4;&#x8F83;&#x7684;&#x503C;&#x76F8;&#x7B49;&#xFF0C;&#x518D;&#x6309;&#x7B2C;&#x4E8C;&#x9879;&#x6BD4;&#x8F83;&#xFF09;,&#x4F8B;&#x5982;&#xFF1A;<br><img src="orderby_code.png" alt="table"><br>&#x8F93;&#x51FA;&#xFF1A;<br><img src="table.png" alt="table">    </p>
+<h2 id="4-&#x94FE;&#x5F0F;&#x8FC7;&#x6EE4;&#x5668;">4. &#x94FE;&#x5F0F;&#x8FC7;&#x6EE4;&#x5668;</h2>
+<p>&#x8FC7;&#x6EE4;&#x5668;&#x6700;&#x4F18;&#x79C0;&#x7684;&#x7279;&#x6027;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5C06;&#x8FC7;&#x6EE4;&#x5668;&#x4E32;&#x8054;&#x8D77;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x521B;&#x9020;&#x51FA;&#x66F4;&#x590D;&#x6742;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x94FE;&#x5F0F;&#x8C03;&#x7528;&#x5C06;limitTo&#x548C;orderBy&#x94FE;&#x63A5;&#x4F7F;&#x7528;&#x7684;&#xFF1A;   </p>
+<p><img src="&#x94FE;&#x5F0F;_code.png" alt="table2">  </p>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;<br><img src="table2.png" alt="table2">  </p>
+<h2 id="34-&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;">3.4 &#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;</h2>
+<p>filter&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4F7F;&#x7528;module&#x7684;filter&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x63A5;&#x6536;&#x8F93;&#x5165;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5904;&#x7406;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;<br>&#x6BD4;&#x5982;&#x6211;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x5947;&#x6570;&#x4F4D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;<br><img src="zidingyi_code.png" alt="zidingyi"><br>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;<br><img src="zidingyi.png" alt="zidingyi">  </p>
+<p><a href="http://chinaSongJian.github.io/&#x90ED;&#x4E43;&#x8C6A;/&#x90ED;&#x4E43;&#x8C6A;-2017.03.03/Listing.html" target="_blank">demo</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../王利银/王利银-2017.03.03/autocomplete.html" class="navigation navigation-prev " aria-label="Previous page: 王利银-HTML5form表单_autocomplete属性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../目录/第13周.html" class="navigation navigation-next " aria-label="Next page: 第13周(2017-03-10)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"郭乃豪-AngularJS过滤器","level":"1.14.2","depth":2,"next":{"title":"第13周(2017-03-10)","level":"1.15","depth":1,"path":"目录/第13周.md","ref":"目录/第13周.md","articles":[{"title":"刘沈-Moment.js","level":"1.15.1","depth":2,"path":"刘沈/刘沈-2017.03.10/moment.md","ref":"刘沈/刘沈-2017.03.10/moment.md","articles":[]},{"title":"宋健-NodeJs内存监控","level":"1.15.2","depth":2,"path":"宋健/宋健-2017.03.10/NodeJs内存监控.md","ref":"宋健/宋健-2017.03.10/NodeJs内存监控.md","articles":[]}]},"previous":{"title":"王利银-HTML5form表单_autocomplete属性","level":"1.14.1","depth":2,"path":"王利银/王利银-2017.03.03/autocomplete.md","ref":"王利银/王利银-2017.03.03/autocomplete.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"郭乃豪/郭乃豪-2017.03.03/过滤器.md","mtime":"2017-03-03T01:56:40.096Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T03:03:37.168Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

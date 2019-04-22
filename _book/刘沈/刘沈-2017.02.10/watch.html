@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script src="jquery-2.2.3.js"></script>
+<script src="angular.js"></script>
+<script src="watch.js"></script>
+<body>
+<div ng-controller="watchController">
+    <form>
+        单个监听：<input ng-model="text">
+        <p>
+            多个监听1：<input ng-model="count1">
+            多个监听2：<input ng-model="count2">
+        </p>
+        <p ng-repeat="nameA in array">
+            名称：<input ng-model="nameA.name">
+        </p>
+        新旧值：<input ng-model="old">
+    </form>
+
+
+</div>
+</body>
+</html>

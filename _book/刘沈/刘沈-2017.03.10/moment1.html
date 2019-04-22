@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+</head>
+<script src="moment.js"></script>
+
+<body>
+
+</body>
+<script>
+    document.write('moment("20111031","YYYYMMDD").fromNow();    result:   '+moment("20111031","YYYYMMDD").fromNow() +'<br>');
+    document.write('moment("20161031","YYYYMMDD").fromNow(true);    result:    '+moment("20161031","YYYYMMDD").fromNow(true) + '<br>');
+    document.write('moment("20170302","YYYYMMDD").fromNow();    result:    '+moment("20170302","YYYYMMDD").fromNow() + '<br>');
+    document.write('moment("20170309","YYYYMMDD").fromNow();    result:    '+moment("20170309 145000","YYYYMMDD hhmmss").fromNow(true) + '<br>');
+    moment.locale('en', {
+        relativeTime : {
+            future: "in %s",
+            past:   "%s ",// past:   "%s ago",
+            s:  "seconds",
+            m:  "a minute",
+            mm: "%d minutes",
+            h:  "an hour",
+            hh: "%d hours",
+            d:  "a day",
+            dd: "%d ",// dd: "%d days",
+            M:  "a month",
+            MM: "%d months",
+            y:  "a year",
+            yy: "%d years"
+        }
+    })
+    document.write('自定义 ：moment("20170302","YYYYMMDD").fromNow();    result:    '+moment("20170302","YYYYMMDD").fromNow() + '<br>');
+    document.write("moment().add(7, 'days').add(1, 'months');    result:    "+moment().add(7, 'days').add(1, 'months').format() + "<br>");
+    document.write("moment('2010-10-20').isBefore('2010-12-31', 'month');    result:    "+moment('2010-10-20').isBefore('2010-12-31', 'month') + "<br>");
+    document.write('moment().max("2013-04-20T20:00:00+0800");    result:    '+moment().max("2013-04-20T20:00:00+0800").format() + "<br>");
+
+    //console.log(moment("20111031","YYYYMMDD").fromNow());
+</script>
+</html>

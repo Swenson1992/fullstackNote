@@ -1,0 +1,1165 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>宋健-Kafka与nodejs交互 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../目录/第10周.html" />
+    
+    
+    <link rel="prev" href="../../刘沈/刘沈-2017.02.10/$watch.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../目录/安排.html">
+            
+                <a href="../../目录/安排.html">
+            
+                    
+                    课表安排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../目录/第1周.html">
+            
+                <a href="../../目录/第1周.html">
+            
+                    
+                    第1周(2016-12-02)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../郭乃豪/郭乃豪-2016.12.02/理解AngularJS.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2016.12.02/理解AngularJS.html">
+            
+                    
+                    郭乃豪-理解AngularJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../宋健-2016.12.02/初识NodeJS.html">
+            
+                <a href="../宋健-2016.12.02/初识NodeJS.html">
+            
+                    
+                    宋健-初识NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../目录/第2周.html">
+            
+                <a href="../../目录/第2周.html">
+            
+                    
+                    第2周(2016-12-09)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../王利银/王利银-2016.12.09/css优先级规则.html">
+            
+                <a href="../../王利银/王利银-2016.12.09/css优先级规则.html">
+            
+                    
+                    王利银-css优先级规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../刘沈/刘沈-2016.12.09/scope-old.html">
+            
+                <a href="../../刘沈/刘沈-2016.12.09/scope-old.html">
+            
+                    
+                    刘沈-scope(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../目录/第3周.html">
+            
+                <a href="../../目录/第3周.html">
+            
+                    
+                    第3周(2016-12-16)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../刘沈/刘沈-2016.12.16/scope.html">
+            
+                <a href="../../刘沈/刘沈-2016.12.16/scope.html">
+            
+                    
+                    刘沈-scope(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../宋健-2016.12.16/javascript之闭包.html">
+            
+                <a href="../宋健-2016.12.16/javascript之闭包.html">
+            
+                    
+                    宋健-javascript之闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../目录/第4周.html">
+            
+                <a href="../../目录/第4周.html">
+            
+                    
+                    第4周(2016-12-23)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../郭乃豪/郭乃豪-2016.12.23/Bootstrap_CSS.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2016.12.23/Bootstrap_CSS.html">
+            
+                    
+                    郭乃豪-Bootstrap_CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../宋健-2016.12.23/javascript作用域.html">
+            
+                <a href="../宋健-2016.12.23/javascript作用域.html">
+            
+                    
+                    宋健-javascript作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../目录/第5周.html">
+            
+                <a href="../../目录/第5周.html">
+            
+                    
+                    第5周(2016-12-30)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../何纪成/何纪成-2016.12.30/canvas.html">
+            
+                <a href="../../何纪成/何纪成-2016.12.30/canvas.html">
+            
+                    
+                    何纪成-canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../目录/第6周.html">
+            
+                <a href="../../目录/第6周.html">
+            
+                    
+                    第6周(2017-01-06)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../刘沈/刘沈-2017.01.06/拖拽.html">
+            
+                <a href="../../刘沈/刘沈-2017.01.06/拖拽.html">
+            
+                    
+                    刘沈-拖拽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../王利银/王利银-2017.01.06/css小技巧.html">
+            
+                <a href="../../王利银/王利银-2017.01.06/css小技巧.html">
+            
+                    
+                    王利银-css小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../目录/第7周.html">
+            
+                <a href="../../目录/第7周.html">
+            
+                    
+                    第7周(2017-01-13)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../郭乃豪/郭乃豪-2017.01.13/AngularJS_Promise_$q服务.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2017.01.13/AngularJS_Promise_$q服务.html">
+            
+                    
+                    郭乃豪-AngularJS_Promise $q服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../王利银/王利银-2017.01.13/js_捕捉法与冒泡法.html">
+            
+                <a href="../../王利银/王利银-2017.01.13/js_捕捉法与冒泡法.html">
+            
+                    
+                    王利银-js_捕捉法与冒泡法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../目录/第8周.html">
+            
+                <a href="../../目录/第8周.html">
+            
+                    
+                    第8周(2017-01-20)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../王利银/王利银-2017.01.20/清除浮动.html">
+            
+                <a href="../../王利银/王利银-2017.01.20/清除浮动.html">
+            
+                    
+                    王利银-清除浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../目录/第9周.html">
+            
+                <a href="../../目录/第9周.html">
+            
+                    
+                    第9周(2017-02-10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../刘沈/刘沈-2017.02.10/$watch.html">
+            
+                <a href="../../刘沈/刘沈-2017.02.10/$watch.html">
+            
+                    
+                    刘沈-$watch观察模型变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="kafka-node.html">
+            
+                <a href="kafka-node.html">
+            
+                    
+                    宋健-Kafka与nodejs交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../目录/第10周.html">
+            
+                <a href="../../目录/第10周.html">
+            
+                    
+                    第10周(2017-02-17)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../王利银/王利银-2017.02.17/this与$scope.html">
+            
+                <a href="../../王利银/王利银-2017.02.17/this与$scope.html">
+            
+                    
+                    王利银-angularjs里this与$scope的比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../郭乃豪/郭乃豪-2017.02.17/Redis及ioredis入门.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2017.02.17/Redis及ioredis入门.html">
+            
+                    
+                    郭乃豪-Redis及ioredis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../目录/第11周.html">
+            
+                <a href="../../目录/第11周.html">
+            
+                    
+                    第11周(2017-02-24)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../刘沈/刘沈-2017.02.24/$on监听.html">
+            
+                <a href="../../刘沈/刘沈-2017.02.24/$on监听.html">
+            
+                    
+                    刘沈-$on监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../宋健-2017.02.24/NodeJs之数据采集器.html">
+            
+                <a href="../宋健-2017.02.24/NodeJs之数据采集器.html">
+            
+                    
+                    宋健-NodeJs数据采集器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../目录/第12周.html">
+            
+                <a href="../../目录/第12周.html">
+            
+                    
+                    第12周(2017-03-03)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../王利银/王利银-2017.03.03/autocomplete.html">
+            
+                <a href="../../王利银/王利银-2017.03.03/autocomplete.html">
+            
+                    
+                    王利银-HTML5form表单_autocomplete属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../郭乃豪/郭乃豪-2017.03.03/过滤器.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2017.03.03/过滤器.html">
+            
+                    
+                    郭乃豪-AngularJS过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../目录/第13周.html">
+            
+                <a href="../../目录/第13周.html">
+            
+                    
+                    第13周(2017-03-10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../刘沈/刘沈-2017.03.10/moment.html">
+            
+                <a href="../../刘沈/刘沈-2017.03.10/moment.html">
+            
+                    
+                    刘沈-Moment.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../宋健-2017.03.10/NodeJs内存监控.html">
+            
+                <a href="../宋健-2017.03.10/NodeJs内存监控.html">
+            
+                    
+                    宋健-NodeJs内存监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >宋健-Kafka与nodejs交互</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E00;&#x3001;kafka">&#x4E00;&#x3001;Kafka</h1>
+<p>Kafka&#x662F;&#x4E00;&#x79CD;&#x9AD8;&#x541E;&#x5410;&#x91CF;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x6D88;&#x8D39;&#x8005;&#x89C4;&#x6A21;&#x7684;&#x7F51;&#x7AD9;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x52A8;&#x4F5C;&#x6D41;&#x6570;&#x636E;&#x3002; &#x8FD9;&#x79CD;&#x52A8;&#x4F5C;&#xFF08;&#x7F51;&#x9875;&#x6D4F;&#x89C8;&#xFF0C;&#x641C;&#x7D22;&#x548C;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x7684;&#x884C;&#x52A8;&#xFF09;&#x662F;&#x5728;&#x73B0;&#x4EE3;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x8BB8;&#x591A;&#x793E;&#x4F1A;&#x529F;&#x80FD;&#x7684;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x56E0;&#x7D20;&#x3002; &#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x901A;&#x5E38;&#x662F;&#x7531;&#x4E8E;&#x541E;&#x5410;&#x91CF;&#x7684;&#x8981;&#x6C42;&#x800C;&#x901A;&#x8FC7;&#x5904;&#x7406;&#x65E5;&#x5FD7;&#x548C;&#x65E5;&#x5FD7;&#x805A;&#x5408;&#x6765;&#x89E3;&#x51B3;&#x3002; &#x5BF9;&#x4E8E;&#x50CF;Hadoop&#x7684;&#x4E00;&#x6837;&#x7684;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x548C;&#x79BB;&#x7EBF;&#x5206;&#x6790;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F46;&#x53C8;&#x8981;&#x6C42;&#x5B9E;&#x65F6;&#x5904;&#x7406;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x884C;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;Kafka&#x7684;&#x76EE;&#x7684;&#x662F;&#x901A;&#x8FC7;Hadoop&#x7684;&#x5E76;&#x884C;&#x52A0;&#x8F7D;&#x673A;&#x5236;&#x6765;&#x7EDF;&#x4E00;&#x7EBF;&#x4E0A;&#x548C;&#x79BB;&#x7EBF;&#x7684;&#x6D88;&#x606F;&#x5904;&#x7406;&#xFF0C;&#x4E5F;&#x662F;&#x4E3A;&#x4E86;&#x901A;&#x8FC7;&#x96C6;&#x7FA4;&#x673A;&#x6765;&#x63D0;&#x4F9B;&#x5B9E;&#x65F6;&#x7684;&#x6D88;&#x8D39;&#x3002;</p>
+<h2 id="11-kafka&#x76F8;&#x5173;&#x672F;&#x8BED;&#x4ECB;&#x7ECD;">1.1 Kafka&#x76F8;&#x5173;&#x672F;&#x8BED;&#x4ECB;&#x7ECD;</h2>
+<ul>
+<li>Broker<br>Kafka&#x96C6;&#x7FA4;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD9;&#x79CD;&#x670D;&#x52A1;&#x5668;&#x88AB;&#x79F0;&#x4E3A;broker</li>
+<li>Topic<br>&#x6BCF;&#x6761;&#x53D1;&#x5E03;&#x5230;Kafka&#x96C6;&#x7FA4;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x522B;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x522B;&#x88AB;&#x79F0;&#x4E3A;Topic&#x3002;&#xFF08;&#x7269;&#x7406;&#x4E0A;&#x4E0D;&#x540C;Topic&#x7684;&#x6D88;&#x606F;&#x5206;&#x5F00;&#x5B58;&#x50A8;&#xFF0C;&#x903B;&#x8F91;&#x4E0A;&#x4E00;&#x4E2A;Topic&#x7684;&#x6D88;&#x606F;&#x867D;&#x7136;&#x4FDD;&#x5B58;&#x4E8E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;broker&#x4E0A;&#x4F46;&#x7528;&#x6237;&#x53EA;&#x9700;&#x6307;&#x5B9A;&#x6D88;&#x606F;&#x7684;Topic&#x5373;&#x53EF;&#x751F;&#x4EA7;&#x6216;&#x6D88;&#x8D39;&#x6570;&#x636E;&#x800C;&#x4E0D;&#x5FC5;&#x5173;&#x5FC3;&#x6570;&#x636E;&#x5B58;&#x4E8E;&#x4F55;&#x5904;&#xFF09;</li>
+<li>Partition<br>Parition&#x662F;&#x7269;&#x7406;&#x4E0A;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BCF;&#x4E2A;Topic&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;Partition.</li>
+<li>Producer<br>&#x8D1F;&#x8D23;&#x53D1;&#x5E03;&#x6D88;&#x606F;&#x5230;Kafka broker </li>
+<li>Consumer<br>&#x6D88;&#x606F;&#x6D88;&#x8D39;&#x8005;&#xFF0C;&#x5411;Kafka broker&#x8BFB;&#x53D6;&#x6D88;&#x606F;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</li>
+<li>Consumer Group<br>&#x6BCF;&#x4E2A;Consumer&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;Consumer Group&#xFF08;&#x53EF;&#x4E3A;&#x6BCF;&#x4E2A;Consumer&#x6307;&#x5B9A;group name&#xFF0C;&#x82E5;&#x4E0D;&#x6307;&#x5B9A;group name&#x5219;&#x5C5E;&#x4E8E;&#x9ED8;&#x8BA4;&#x7684;group&#xFF09;&#x3002;    </li>
+</ul>
+<h2 id="12-kafka&#x7684;&#x73AF;&#x5883;&#x642D;&#x5EFA;">1.2 kafka&#x7684;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h2>
+<h3 id="121-kafka-&#x5355;&#x8282;&#x70B9;&#x90E8;&#x7F72;">1.2.1 kafka &#x5355;&#x8282;&#x70B9;&#x90E8;&#x7F72;</h3>
+<blockquote>
+<p>&#x9700;&#x8981;&#x57FA;&#x7840;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E3A;java1.6&#x4EE5;&#x4E0A;</p>
+</blockquote>
+<h4 id="1211-zookeeper">1.2.1.1 zookeeper</h4>
+<p>&#x89E3;&#x538B;&#x7F29;</p>
+<pre><code class="lang-shell">inode@inode1:/iflat$ tar zxvf zookeeper-3.4.9.tar.gz
+</code></pre>
+<p>&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x914D;&#x7F6E;&#x6587;&#x4EF6;,</p>
+<pre><code class="lang-shell">inode@inode1:/iflat/zookeeper-3.4.9/conf$ cp zoo_sample.cfg zoo.cfg
+</code></pre>
+<p>&#x7F16;&#x8F91;<code>zoo.cfg</code>, &#x5185;&#x5BB9;&#x5982;&#x4E0B;:
+&#x5728;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&quot;server.id=host:port:port&quot;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;port&#x662F;&#x4ECE;&#x673A;&#x5668;&#xFF08;follower&#xFF09;&#x8FDE;&#x63A5;&#x5230;&#x4E3B;&#x673A;&#x5668;&#xFF08;leader&#xFF09;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;port&#x662F;&#x8FDB;&#x884C;leadership&#x9009;&#x4E3E;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x3002;</p>
+<pre><code class="lang-shell"># The number of milliseconds of each tick
+tickTime=2000
+# The number of ticks that the initial
+# synchronization phase can take
+initLimit=10
+# The number of ticks that can pass between
+# sending a request and getting an acknowledgement
+syncLimit=5
+# the directory where the snapshot is stored.
+# do not use /tmp for storage, /tmp here is just
+# example sakes.
+dataDir=/iflat/datapool/zookeeper
+# the port at which the clients will connect
+clientPort=2181
+# the maximum number of client connections.
+# increase this if you need to handle more clients
+#maxClientCnxns=60
+#
+# Be sure to read the maintenance section of the
+# administrator guide before turning on autopurge.
+#
+# http://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_maintenance
+#
+# The number of snapshots to retain in dataDir
+#autopurge.snapRetainCount=3
+# Purge task interval in hours
+# Set to &quot;0&quot; to disable auto purge feature
+#autopurge.purgeInterval=1
+dataLogDir=/iflat/logpool/zookeeper
+# &quot;server.id=host:port:port&quot;&#x4E2D;&#x7684;host&#x4E3A;&#x4E3B;&#x673A;&#x540D;
+# &#x7B2C;&#x4E00;&#x4E2A;port&#x662F;&#x4ECE;&#x673A;&#x5668;&#xFF08;follower&#xFF09;&#x8FDE;&#x63A5;&#x5230;&#x4E3B;&#x673A;&#x5668;&#xFF08;leader&#xFF09;&#x7684;&#x7AEF;&#x53E3;&#x53F7;
+# &#x7B2C;&#x4E8C;&#x4E2A;port&#x662F;&#x8FDB;&#x884C;leadership&#x9009;&#x4E3E;&#x7684;&#x7AEF;&#x53E3;&#x53F7;
+server.1=192.168.25.111:2888:3888
+#server.2=192.168.25.112:2888:3888
+#server.3=192.168.25.113:2888:3888
+#server.4=192.168.25.114:2888:3888
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5728;dataDir&#x6240;&#x6307;&#x5B9A;&#x7684;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x4E3A;myid&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x53EA;&#x6709;&#x4E00;&#x884C;&#xFF0C;&#x4E3A;&#x672C;&#x4E3B;&#x673A;&#x5BF9;&#x5E94;&#x7684;id&#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0A;&#x56FE;&#x4E2D;server.id&#x4E2D;&#x7684;id&#x3002;
+&#x4F8B;&#x5982;&#xFF1A;&#x5728;&#x670D;&#x52A1;&#x5668;1&#x4E2D;&#x7684;myid&#x7684;&#x5185;&#x5BB9;&#x5E94;&#x8BE5;&#x5199;&#x5165;1&#x3002;</p>
+<pre><code class="lang-shell">inode@inode1:/iflat$ echo &quot;1&quot; &gt; /iflat/datapool/zookeeper/myid
+inode@inode1:/iflat$ more /iflat/datapool/zookeeper/myid
+1
+</code></pre>
+<p>&#x542F;&#x52A8;zookeeper</p>
+<pre><code class="lang-shell">inode@inode1:/iflat$ ./zookeeper-3.4.9/bin/zkServer.sh start
+</code></pre>
+<h4 id="1212-&#x5B89;&#x88C5;kafka">1.2.1.2 &#x5B89;&#x88C5;kafka</h4>
+<p>&#x89E3;&#x538B;&#x5B89;&#x88C5;&#x5305;&#x5E76;&#x505A;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-shell">tar zxvf kafka_2.11-0.10.1.1.tgz
+//&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;/home/root/lijingfeng/kafka_2.11-0.10.1.1/config/server.properties
+//&#x5982;&#x4E0B;
+//# Licensed to the Apache Software Foundation (ASF) under one or more
+//# contributor license agreements.  See the NOTICE file distributed with
+//# this work for additional information regarding copyright ownership.
+//# The ASF licenses this file to You under the Apache License, Version 2.0
+//# (the &quot;License&quot;); you may not use this file except in compliance with
+//# the License.  You may obtain a copy of the License at
+//#
+//#    http://www.apache.org/licenses/LICENSE-2.0
+//#
+//# Unless required by applicable law or agreed to in writing, software
+//# distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+//# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//# See the License for the specific language governing permissions and
+//# limitations under the License.
+
+//# see kafka.server.KafkaConfig for additional details and defaults
+
+//#//////////////////////////////////////////////////////// Server Basics //////////////////////////////////////////////////////////
+
+//# The id of the broker. This must be set to a unique integer for each broker.
+broker.id=0
+
+//## Switch to enable topic deletion or not, default value is false
+//#delete.topic.enable=true
+
+//#///////////////////////////////// Socket Server Settings //#////////////////////////////////////////////////////////
+
+//# The address the socket server listens on. It will get the value returned from
+//# java.net.InetAddress.getCanonicalHostName() if not configured.
+//#   FORMAT:
+//#     listeners = security_protocol://host_name:port
+//#   EXAMPLE:
+//#     listeners = PLAINTEXT://your.host.name:9092
+//#listeners=PLAINTEXT://:9092
+
+//# Hostname and port the broker will advertise to producers and consumers. If not set,
+//# it uses the value for &quot;listeners&quot; if configured.  Otherwise, it will use the value
+//# returned from java.net.InetAddress.getCanonicalHostName().
+//#advertised.listeners=PLAINTEXT://your.host.name:9092
+
+//# The number of threads handling network requests
+num.network.threads=3
+
+//# The number of threads doing disk I/O
+num.io.threads=8
+
+//# The send buffer (SO_SNDBUF) used by the socket server
+socket.send.buffer.bytes=102400
+
+//# The receive buffer (SO_RCVBUF) used by the socket server
+socket.receive.buffer.bytes=102400
+
+//# The maximum size of a request that the socket server will accept (protection against OOM)
+socket.request.max.bytes=104857600
+
+
+//#//////////////////////////////////////////////////////// Log Basics //////////////////////////////////////////////////////////
+
+//# A comma seperated list of directories under which to store log files
+log.dirs=/tmp/kafka-logs
+
+//# The default number of log partitions per topic. More partitions allow greater
+//# parallelism for consumption, but this will also result in more files across
+//# the brokers.
+num.partitions=1
+
+//# The number of threads per data directory to be used for log recovery at startup and flushing at shutdown.
+//# This value is recommended to be increased for installations with data dirs located in RAID array.
+num.recovery.threads.per.data.dir=1
+
+//#//////////////////////////////////////////////////////// Log Flush Policy ////#//////////////////////////////////////////////////////
+
+//# Messages are immediately written to the filesystem but by default we only fsync() to sync
+//# the OS cache lazily. The following configurations control the flush of data to disk.
+//# There are a few important trade-offs here:
+//#    1. Durability: Unflushed data may be lost if you are not using replication.
+//#    2. Latency: Very large flush intervals may lead to latency spikes when the flush does occur as there will be a lot of data to flush.
+//#    3. Throughput: The flush is generally the most expensive operation, and a small flush interval may lead to exceessive seeks.
+//# The settings below allow one to configure the flush policy to flush data after a period of time or
+//# every N messages (or both). This can be done globally and overridden on a per-topic basis.
+
+//# The number of messages to accept before forcing a flush of data to disk
+//#log.flush.interval.messages=10000
+
+//# The maximum amount of time a message can sit in a log before we force a flush
+//#log.flush.interval.ms=1000
+
+//#//////////////////////////////////////////////////////// Log Retention Policy ////#//////////////////////////////////////////////////////
+
+//# The following configurations control the disposal of log segments. The policy can
+//# be set to delete segments after a period of time, or after a given size has accumulated.
+//# A segment will be deleted whenever *either* of these criteria are met. Deletion always happens
+//# from the end of the log.
+
+//# The minimum age of a log file to be eligible for deletion
+log.retention.hours=1
+
+//# A size-based retention policy for logs. Segments are pruned from the log as long as the remaining
+//# segments don&apos;t drop below log.retention.bytes.
+//#log.retention.bytes=1073741824
+
+//# The maximum size of a log segment file. When this size is reached a new log segment will be created.
+log.segment.bytes=1073741824
+
+//# The interval at which log segments are checked to see if they can be deleted according
+//# to the retention policies
+log.retention.check.interval.ms=300000
+
+////#////////////////////////////////////////////////////// Zookeeper //////////////////////////////////////////////////////////
+
+//# Zookeeper connection string (see zookeeper docs for details).
+//# This is a comma separated host:port pairs, each corresponding to a zk
+//# server. e.g. &quot;127.0.0.1:3000,127.0.0.1:3001,127.0.0.1:3002&quot;.
+//# You can also append an optional chroot string to the urls to specify the
+//# root directory for all kafka znodes.
+zookeeper.connect=192.100.10.234:2181
+
+//# Timeout in ms for connecting to zookeeper
+zookeeper.connection.timeout.ms=6000
+
+listeners = PLAINTEXT://192.100.10.234:9092
+</code></pre>
+<p>&#x542F;&#x52A8;kafka</p>
+<p><code>/home/root/iflat/kafka_2.11-0.10.1.0$ bin/kafka-server-start.sh config/server.properties &amp;</code></p>
+<h4 id="1213-&#x4F7F;&#x7528;&#x6D4B;&#x8BD5;">1.2.1.3 &#x4F7F;&#x7528;&#x6D4B;&#x8BD5;</h4>
+<ul>
+<li>&#x521B;&#x5EFA;topic</li>
+</ul>
+<p><code>/kafka_2.11-0.10.1.1/bin/kafka-topics.sh --create --zookeeper 192.100.10.234:2181 --replication-factor 1 --partitions 1 --topic test20170112</code></p>
+<ul>
+<li>&#x521B;&#x5EFA;producer</li>
+</ul>
+<p><code>/kafka_2.11-0.10.1.1/bin/kafka-console-producer.sh --broker-list 192.100.10.234:9092 --topic test20170112</code></p>
+<ul>
+<li>&#x521B;&#x5EFA;consumer</li>
+</ul>
+<p><code>/kafka_2.11-0.10.1.1/bin/kafka-console-consumer.sh --zookeeper 192.100.10.234 --from-beginning --topic test20170112</code></p>
+<h2 id="13-nodejs&#x5BF9;kafka&#x7684;producer&#x64CD;&#x4F5C;">1.3 nodejs&#x5BF9;kafka&#x7684;producer&#x64CD;&#x4F5C;</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> kafka = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;kafka-node&apos;</span>);
+<span class="hljs-keyword">var</span> Producer = kafka.Producer;
+<span class="hljs-keyword">var</span> KeyedMessage = kafka.KeyedMessage;
+<span class="hljs-keyword">var</span> Client = kafka.Client;
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> Client(<span class="hljs-string">&apos;192.168.1.130:2181&apos;</span>);
+<span class="hljs-keyword">var</span> argv = {
+    topic: <span class="hljs-string">&quot;songjian2&quot;</span>
+};
+<span class="hljs-keyword">var</span> topic = argv.topic;
+<span class="hljs-keyword">var</span> p = argv.p || <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> a = argv.a || <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> producer = <span class="hljs-keyword">new</span> Producer(client, {
+    requireAcks: <span class="hljs-number">1</span>
+});
+producer.on(<span class="hljs-string">&apos;ready&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> args = {
+        appid: <span class="hljs-string">&apos;wx238c28839a1&apos;</span>,
+        createTime: <span class="hljs-string">&apos;ddd&apos;</span>,
+        toUserName: <span class="hljs-string">&apos;wx238c28839a1&apos;</span>,
+        fromUserName: <span class="hljs-string">&apos;wx238c28839a1&apos;</span>,
+        money: <span class="hljs-string">&apos;$100&apos;</span>
+    };
+    <span class="hljs-comment">// var keyedMessage = new KeyedMessage(&apos;keyed&apos;, &apos;a keyed message&apos;);</span>
+    producer.send([{
+        topic: topic,
+        partition: p,
+        messages: [<span class="hljs-built_in">JSON</span>.stringify(args)],
+        attributes: a
+    }], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(err || result);
+        process.exit();
+    });
+
+    <span class="hljs-comment">//create topics</span>
+    <span class="hljs-comment">// producer.createTopics([&apos;t1&apos;], function (err, data) {</span>
+    <span class="hljs-comment">//     console.log(data);</span>
+    <span class="hljs-comment">// });</span>
+});
+</code></pre>
+<h2 id="14-nodejs&#x5BF9;kafka&#x7684;consumer&#x64CD;&#x4F5C;">1.4 nodejs&#x5BF9;kafka&#x7684;consumer&#x64CD;&#x4F5C;</h2>
+<pre><code class="lang-js"><span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">var</span> kafka = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;kafka-node&apos;</span>);
+<span class="hljs-keyword">var</span> events = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;events&apos;</span>);
+<span class="hljs-keyword">var</span> emitter = <span class="hljs-keyword">new</span> events.EventEmitter();
+<span class="hljs-comment">//var HighLevelConsumer = kafka.HighLevelConsumer;</span>
+<span class="hljs-keyword">var</span> Consumer = kafka.Consumer;
+<span class="hljs-keyword">var</span> Offset = kafka.Offset;
+<span class="hljs-keyword">var</span> Client = kafka.Client;
+<span class="hljs-keyword">var</span> argv = {
+    topic: <span class="hljs-string">&quot;songjian2&quot;</span>
+};
+<span class="hljs-keyword">var</span> topic = argv.topic;
+
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> Client(<span class="hljs-string">&apos;192.168.1.130:2181&apos;</span>);
+<span class="hljs-keyword">var</span> topics = [{
+        topic: topic,
+        partition: <span class="hljs-number">0</span>,
+        offset: <span class="hljs-number">8000</span>
+    }],
+    options = {
+        autoCommit: <span class="hljs-literal">false</span>,
+        fetchMaxWaitMs: <span class="hljs-number">1000</span>,
+        fetchMaxBytes: <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span>,
+        fromOffset: <span class="hljs-literal">true</span>
+    };
+
+<span class="hljs-keyword">var</span> consumer = <span class="hljs-keyword">new</span> Consumer(client, topics, options);
+<span class="hljs-keyword">var</span> offset = <span class="hljs-keyword">new</span> Offset(client);
+
+<span class="hljs-comment">//consumer.setOffset(topic, 0, 36);</span>
+consumer.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{
+    <span class="hljs-keyword">var</span> obj = message;
+    <span class="hljs-keyword">var</span> message = <span class="hljs-built_in">JSON</span>.parse(message.value);
+    <span class="hljs-keyword">var</span> args = [];
+    args.push(message.openId);
+    args.push(message.fromUserName);
+    args.push(message.toUserName);
+    args.push(message.money);
+    args.push(message.attach);
+    args.push(message.appId);
+    args.push(message.cTime);
+    emitter.emit(<span class="hljs-string">&apos;load&apos;</span>, args);
+
+});
+
+consumer.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;error&apos;</span>, err);
+});
+
+emitter.on(<span class="hljs-string">&apos;load&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;listener2&apos;</span>, args);
+
+        <span class="hljs-comment">// function insert(args) {</span>
+        <span class="hljs-comment">//     middleconsumer.saveRecord(args)</span>
+        <span class="hljs-comment">//         .then(function(data) {</span>
+        <span class="hljs-comment">//             insert(args);</span>
+        <span class="hljs-comment">//         }, function(er) {</span>
+
+        <span class="hljs-comment">//         });</span>
+        <span class="hljs-comment">// }</span>
+        <span class="hljs-comment">// insert(args);</span>
+});
+    <span class="hljs-comment">/*
+     * If consumer get `offsetOutOfRange` event, fetch data from the smallest(oldest) offset
+     */</span>
+consumer.on(<span class="hljs-string">&apos;offsetOutOfRange&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">topic</span>) </span>{
+    topic.maxNum = <span class="hljs-number">2</span>;
+    offset.fetch([topic], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, offsets</span>) </span>{
+        <span class="hljs-keyword">var</span> min = <span class="hljs-built_in">Math</span>.min.apply(<span class="hljs-literal">null</span>, offsets[topic.topic][topic.partition]);
+        consumer.setOffset(topic.topic, topic.partition, min);
+    });
+});
+</code></pre>
+<h2 id="15-node-kafka-test-&#x4F8B;&#x5B50;">1.5 node-kafka-test &#x4F8B;&#x5B50;</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> kafka = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;kafka-node&apos;</span>) ;
+<span class="hljs-keyword">var</span> Producer = kafka.Producer;
+<span class="hljs-keyword">var</span> Client = kafka.Client;
+<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> Client(<span class="hljs-string">&apos;192.168.1.130:2181&apos;</span>);
+<span class="hljs-keyword">var</span> topic = <span class="hljs-string">&apos;logService&apos;</span>;
+<span class="hljs-keyword">var</span> p = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> producer = <span class="hljs-keyword">new</span> Producer(client, { requireAcks: <span class="hljs-number">1</span> });
+
+producer.on(<span class="hljs-string">&apos;ready&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//var message = &apos;niefengjun2015&apos;;</span>
+
+    <span class="hljs-keyword">var</span> ret={} ;
+        ret.id=<span class="hljs-string">&quot;ceshi2016&quot;</span> ;
+        ret.nie=<span class="hljs-string">&quot;2222&quot;</span> ;
+        ret.qq=<span class="hljs-string">&quot;357403651&quot;</span> ;
+
+    <span class="hljs-keyword">var</span> r1= { topic: topic, partition: p, messages:<span class="hljs-built_in">JSON</span>.stringify(ret)} ;
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;11111&apos;</span>,<span class="hljs-built_in">JSON</span>.stringify(r1)) ;
+    producer.send([
+       r1
+    ], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, result</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(err || result);
+        process.exit();
+    });
+});
+
+producer.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;error&apos;</span>, err)
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../刘沈/刘沈-2017.02.10/$watch.html" class="navigation navigation-prev " aria-label="Previous page: 刘沈-$watch观察模型变化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../目录/第10周.html" class="navigation navigation-next " aria-label="Next page: 第10周(2017-02-17)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"宋健-Kafka与nodejs交互","level":"1.11.2","depth":2,"next":{"title":"第10周(2017-02-17)","level":"1.12","depth":1,"path":"目录/第10周.md","ref":"目录/第10周.md","articles":[{"title":"王利银-angularjs里this与$scope的比较","level":"1.12.1","depth":2,"path":"王利银/王利银-2017.02.17/this与$scope.md","ref":"王利银/王利银-2017.02.17/this与$scope.md","articles":[]},{"title":"郭乃豪-Redis及ioredis入门","level":"1.12.2","depth":2,"path":"郭乃豪/郭乃豪-2017.02.17/Redis及ioredis入门.md","ref":"郭乃豪/郭乃豪-2017.02.17/Redis及ioredis入门.md","articles":[]}]},"previous":{"title":"刘沈-$watch观察模型变化","level":"1.11.1","depth":2,"path":"刘沈/刘沈-2017.02.10/$watch.md","ref":"刘沈/刘沈-2017.02.10/$watch.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"宋健/宋健-2017.02.10/kafka-node.md","mtime":"2017-02-16T01:42:19.280Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T03:03:37.168Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

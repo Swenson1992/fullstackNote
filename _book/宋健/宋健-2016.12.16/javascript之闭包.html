@@ -1,0 +1,912 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>宋健-javascript之闭包 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../目录/第4周.html" />
+    
+    
+    <link rel="prev" href="../../刘沈/刘沈-2016.12.16/scope.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../目录/安排.html">
+            
+                <a href="../../目录/安排.html">
+            
+                    
+                    课表安排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../目录/第1周.html">
+            
+                <a href="../../目录/第1周.html">
+            
+                    
+                    第1周(2016-12-02)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../郭乃豪/郭乃豪-2016.12.02/理解AngularJS.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2016.12.02/理解AngularJS.html">
+            
+                    
+                    郭乃豪-理解AngularJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../宋健-2016.12.02/初识NodeJS.html">
+            
+                <a href="../宋健-2016.12.02/初识NodeJS.html">
+            
+                    
+                    宋健-初识NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../目录/第2周.html">
+            
+                <a href="../../目录/第2周.html">
+            
+                    
+                    第2周(2016-12-09)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../王利银/王利银-2016.12.09/css优先级规则.html">
+            
+                <a href="../../王利银/王利银-2016.12.09/css优先级规则.html">
+            
+                    
+                    王利银-css优先级规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../刘沈/刘沈-2016.12.09/scope-old.html">
+            
+                <a href="../../刘沈/刘沈-2016.12.09/scope-old.html">
+            
+                    
+                    刘沈-scope(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../目录/第3周.html">
+            
+                <a href="../../目录/第3周.html">
+            
+                    
+                    第3周(2016-12-16)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../刘沈/刘沈-2016.12.16/scope.html">
+            
+                <a href="../../刘沈/刘沈-2016.12.16/scope.html">
+            
+                    
+                    刘沈-scope(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="javascript之闭包.html">
+            
+                <a href="javascript之闭包.html">
+            
+                    
+                    宋健-javascript之闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../目录/第4周.html">
+            
+                <a href="../../目录/第4周.html">
+            
+                    
+                    第4周(2016-12-23)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../郭乃豪/郭乃豪-2016.12.23/Bootstrap_CSS.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2016.12.23/Bootstrap_CSS.html">
+            
+                    
+                    郭乃豪-Bootstrap_CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../宋健-2016.12.23/javascript作用域.html">
+            
+                <a href="../宋健-2016.12.23/javascript作用域.html">
+            
+                    
+                    宋健-javascript作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../目录/第5周.html">
+            
+                <a href="../../目录/第5周.html">
+            
+                    
+                    第5周(2016-12-30)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../何纪成/何纪成-2016.12.30/canvas.html">
+            
+                <a href="../../何纪成/何纪成-2016.12.30/canvas.html">
+            
+                    
+                    何纪成-canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../目录/第6周.html">
+            
+                <a href="../../目录/第6周.html">
+            
+                    
+                    第6周(2017-01-06)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../刘沈/刘沈-2017.01.06/拖拽.html">
+            
+                <a href="../../刘沈/刘沈-2017.01.06/拖拽.html">
+            
+                    
+                    刘沈-拖拽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../王利银/王利银-2017.01.06/css小技巧.html">
+            
+                <a href="../../王利银/王利银-2017.01.06/css小技巧.html">
+            
+                    
+                    王利银-css小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../目录/第7周.html">
+            
+                <a href="../../目录/第7周.html">
+            
+                    
+                    第7周(2017-01-13)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../郭乃豪/郭乃豪-2017.01.13/AngularJS_Promise_$q服务.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2017.01.13/AngularJS_Promise_$q服务.html">
+            
+                    
+                    郭乃豪-AngularJS_Promise $q服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../王利银/王利银-2017.01.13/js_捕捉法与冒泡法.html">
+            
+                <a href="../../王利银/王利银-2017.01.13/js_捕捉法与冒泡法.html">
+            
+                    
+                    王利银-js_捕捉法与冒泡法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../目录/第8周.html">
+            
+                <a href="../../目录/第8周.html">
+            
+                    
+                    第8周(2017-01-20)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../王利银/王利银-2017.01.20/清除浮动.html">
+            
+                <a href="../../王利银/王利银-2017.01.20/清除浮动.html">
+            
+                    
+                    王利银-清除浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../目录/第9周.html">
+            
+                <a href="../../目录/第9周.html">
+            
+                    
+                    第9周(2017-02-10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../刘沈/刘沈-2017.02.10/$watch.html">
+            
+                <a href="../../刘沈/刘沈-2017.02.10/$watch.html">
+            
+                    
+                    刘沈-$watch观察模型变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../宋健-2017.02.10/kafka-node.html">
+            
+                <a href="../宋健-2017.02.10/kafka-node.html">
+            
+                    
+                    宋健-Kafka与nodejs交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../目录/第10周.html">
+            
+                <a href="../../目录/第10周.html">
+            
+                    
+                    第10周(2017-02-17)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../王利银/王利银-2017.02.17/this与$scope.html">
+            
+                <a href="../../王利银/王利银-2017.02.17/this与$scope.html">
+            
+                    
+                    王利银-angularjs里this与$scope的比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../郭乃豪/郭乃豪-2017.02.17/Redis及ioredis入门.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2017.02.17/Redis及ioredis入门.html">
+            
+                    
+                    郭乃豪-Redis及ioredis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../目录/第11周.html">
+            
+                <a href="../../目录/第11周.html">
+            
+                    
+                    第11周(2017-02-24)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../刘沈/刘沈-2017.02.24/$on监听.html">
+            
+                <a href="../../刘沈/刘沈-2017.02.24/$on监听.html">
+            
+                    
+                    刘沈-$on监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../宋健-2017.02.24/NodeJs之数据采集器.html">
+            
+                <a href="../宋健-2017.02.24/NodeJs之数据采集器.html">
+            
+                    
+                    宋健-NodeJs数据采集器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../目录/第12周.html">
+            
+                <a href="../../目录/第12周.html">
+            
+                    
+                    第12周(2017-03-03)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../王利银/王利银-2017.03.03/autocomplete.html">
+            
+                <a href="../../王利银/王利银-2017.03.03/autocomplete.html">
+            
+                    
+                    王利银-HTML5form表单_autocomplete属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../郭乃豪/郭乃豪-2017.03.03/过滤器.html">
+            
+                <a href="../../郭乃豪/郭乃豪-2017.03.03/过滤器.html">
+            
+                    
+                    郭乃豪-AngularJS过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../目录/第13周.html">
+            
+                <a href="../../目录/第13周.html">
+            
+                    
+                    第13周(2017-03-10)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../刘沈/刘沈-2017.03.10/moment.html">
+            
+                <a href="../../刘沈/刘沈-2017.03.10/moment.html">
+            
+                    
+                    刘沈-Moment.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../宋健-2017.03.10/NodeJs内存监控.html">
+            
+                <a href="../宋健-2017.03.10/NodeJs内存监控.html">
+            
+                    
+                    宋健-NodeJs内存监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >宋健-javascript之闭包</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="javascript&#x4E4B;&#x95ED;&#x5305;">javascript&#x4E4B;&#x95ED;&#x5305;</h1>
+<h2 id="&#x95ED;&#x5305;&#x7684;&#x6982;&#x5FF5;">&#x95ED;&#x5305;&#x7684;&#x6982;&#x5FF5;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x95ED;&#x5305;&#xFF08;closure&#xFF09;&#x662F; JavaScript &#x7684;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7279;&#x6027;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5173;&#x4E8E;&#x95ED;&#x5305;&#xFF0C;&#x6709;&#x4E00;&#x79CD;&#x7ECF;&#x5178;&#x7684;&#x63D0;&#x6CD5;&#x2014;&#x2014;&#x201C;&#x95ED;&#x5305;&#x662F;&#x4EE3;&#x7801;&#x5757;&#x548C;&#x521B;&#x5EFA;&#x8BE5;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;&#x73AF;&#x5883;&#xFF09;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x7ED3;&#x5408;&#x201D;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x95ED;&#x5305;&#x5C31;&#x662F;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#xFF0C;&#x5185;&#x90E8;&#x7684;&#x51FD;&#x6570;&#x53EF;&#x8BBF;&#x95EE;&#x5176;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x5B9E;&#x73B0;&#x95ED;&#x5305;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params">name</span>)</span>{ <span class="hljs-comment">// &#x5916;&#x90E8;&#x7684;&#x51FD;&#x6570;</span>
+
+ <span class="hljs-keyword">var</span> msg=<span class="hljs-string">&quot;hello&quot;</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-comment">// &#x5185;&#x90E8;&#x51FD;&#x6570;</span>
+   alert(msg+<span class="hljs-string">&quot; &quot;</span>+name);
+  }
+  <span class="hljs-keyword">return</span> inner(); <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x5185;&#x90E8;&#x51FD;&#x6570;</span>
+ }
+ <span class="hljs-keyword">var</span> clos=outer(<span class="hljs-string">&quot;WANGERN&quot;</span>);
+ clos();
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;&#x5F39;&#x51FA;&#x8B66;&#x544A;&#x201C;hello WANGERN&#x201D;&#x3002;</p>
+<h2 id="&#x524D;&#x63D0;">&#x524D;&#x63D0;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8981;&#x7406;&#x89E3;&#x95ED;&#x5305;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5173;&#x952E;&#x6027;&#x6982;&#x5FF5;&#x2014;&#x2014; JavaScript &#x7684;&#x4F5C;&#x7528;&#x57DF;&#x89C4;&#x5219;&#x3002;&#x5148;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;scope&#xFF09;&#x3002;&#x5728;&#x8FD0;&#x884C;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#xFF08;context&#xFF09;&#x53CA;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x5373;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x8303;&#x56F4;&#x5185;&#x7684;&#x53D8;&#x91CF;&#x3002;JavaScript &#x4E2D;&#x6700;&#x5916;&#x56F4;&#x7684;&#x73AF;&#x5883;&#x4E3A; window &#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x6240;&#x5728;&#x7684;&#x73AF;&#x5883;&#x3002;&#x5F53;&#x6267;&#x884C;&#x5230;&#x4E0B;&#x4E00;&#x7EA7;&#x73AF;&#x5883;&#x65F6;&#xFF0C;&#x4E0B;&#x4E00;&#x7EA7;&#x73AF;&#x5883;&#x4F1A;&#x4E3B;&#x52A8;&#x5305;&#x542B;&#x4E0A;&#x4E00;&#x7EA7;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x6700;&#x7EC8;&#x5F62;&#x6210;&#x4E00;&#x7EA7;&#x4E00;&#x7EA7;&#x5173;&#x8054;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#xFF08;&#x5BF9;&#x8C61;&#x7684; [[Scope]] &#x5C5E;&#x6027;&#x6307;&#x5411;&#x8BE5;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#xFF09;&#x3002;&#x5F53;&#x6709;&#x4E0B;&#x4E00;&#x7EA7;&#x73AF;&#x5883;&#x751F;&#x6210;&#x65F6;&#xFF0C;&#x4E0A;&#x4E00;&#x7EA7;&#x73AF;&#x5883;&#x4F1A;&#x5931;&#x6D3B;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x9500;&#x6BC1;&#x800C;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x79CD;&#x201C;&#x6808;&#x201D;&#x5F0F;&#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#x7684;&#x5EF6;&#x7EED;&#x6027;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x73AF;&#x5883;&#x56DE;&#x9000;&#x65F6;&#x518D;&#x6B21;&#x6FC0;&#x6D3B;&#x3002;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x53EF;&#x8BBF;&#x95EE;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#x7684; inner() &#x51FD;&#x6570;&#x53EF;&#x8BBF;&#x95EE; outer() &#x51FD;&#x6570;&#x4E2D;&#x7684; msg &#x548C; name &#x53D8;&#x91CF;&#x3002; </p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x95ED;&#x5305;&#x5C31;&#x662F;&#x501F;&#x52A9;&#x8FD9;&#x79CD;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x53EF;&#x4F7F;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x53EF;&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x7684;&#x53D8;&#x91CF;&#xFF1B;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x95ED;&#x5305;&#x8FD8;&#x53EF;&#x4EE5;&#x6291;&#x5236;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x73AF;&#x5883;&#x7684;&#x9500;&#x6BC1;&#xFF0C;&#x4F7F;&#x5176;&#x53D8;&#x91CF;&#x59CB;&#x7EC8;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x76F4;&#x81F3;&#x4E0D;&#x9700;&#x8981;&#x65F6;&#x518D;&#x9500;&#x6BC1;&#x3002;</p>
+<hr>
+<h2 id="&#x95ED;&#x5305;&#x7684;&#x5B9E;&#x4F8B;">&#x95ED;&#x5305;&#x7684;&#x5B9E;&#x4F8B;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5148;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5F53;function&#x91CC;&#x5D4C;&#x5957;function&#x65F6;&#xFF0C;&#x5185;&#x90E8;&#x7684;function&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5916;&#x90E8;function&#x91CC;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-js"> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x</span>) </span>{
+     <span class="hljs-keyword">var</span> tmp = <span class="hljs-number">3</span>;
+     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params">y</span>) </span>{
+         alert(x + y + (++tmp));
+     }
+     bar(<span class="hljs-number">10</span>);
+ }
+ foo(<span class="hljs-number">2</span>)
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0D;&#x7BA1;&#x6267;&#x884C;&#x591A;&#x5C11;&#x6B21;&#xFF0C;&#x90FD;&#x4F1A;alert 16&#xFF0C;&#x56E0;&#x4E3A;bar&#x80FD;&#x8BBF;&#x95EE;foo&#x7684;&#x53C2;&#x6570;x&#xFF0C;&#x4E5F;&#x80FD;&#x8BBF;&#x95EE;foo&#x7684;&#x53D8;&#x91CF;tmp&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4F46;&#xFF0C;&#x8FD9;&#x8FD8;&#x4E0D;&#x662F;&#x95ED;&#x5305;&#x3002;&#x5F53;&#x4F60;return&#x7684;&#x662F;&#x5185;&#x90E8;function&#x65F6;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x95ED;&#x5305;&#x3002;&#x5185;&#x90E8;function&#x4F1A;close-over&#x5916;&#x90E8;function&#x7684;&#x53D8;&#x91CF;&#x76F4;&#x5230;&#x5185;&#x90E8;function&#x7ED3;&#x675F;&#x3002;</p>
+<pre><code class="lang-js"> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x</span>) </span>{
+     <span class="hljs-keyword">var</span> tmp = <span class="hljs-number">3</span>;
+     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">y</span>) </span>{
+         alert(x + y + (++tmp));
+     }
+ }
+ <span class="hljs-keyword">var</span> bar = foo(<span class="hljs-number">2</span>); <span class="hljs-comment">// bar &#x73B0;&#x5728;&#x662F;&#x4E00;&#x4E2A;&#x95ED;&#x5305;</span>
+ bar(<span class="hljs-number">10</span>);
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x9762;&#x7684;&#x811A;&#x672C;&#x6700;&#x7EC8;&#x4E5F;&#x4F1A;alert 16&#xFF0C;&#x56E0;&#x4E3A;&#x867D;&#x7136;bar&#x4E0D;&#x76F4;&#x63A5;&#x5904;&#x4E8E;foo&#x7684;&#x5185;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4F46;bar&#x8FD8;&#x662F;&#x80FD;&#x8BBF;&#x95EE;x&#x548C;tmp&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4F46;&#x662F;&#xFF0C;&#x7531;&#x4E8E;tmp&#x4ECD;&#x5B58;&#x5728;&#x4E8E;bar&#x95ED;&#x5305;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x8FD8;&#x662F;&#x4F1A;&#x81EA;&#x52A0;1&#xFF0C;&#x800C;&#x4E14;&#x4F60;&#x6BCF;&#x6B21;&#x8C03;&#x7528;bar&#x65F6;&#x5B83;&#x90FD;&#x4F1A;&#x81EA;&#x52A0;1.</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;(&#x6211;&#x4EEC;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x4E0D;&#x6B62;&#x4E00;&#x4E2A;&#x95ED;&#x5305;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;return&#x5B83;&#x4EEC;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x4EEC;&#x8BBE;&#x7F6E;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;&#x5B83;&#x4EEC;&#x5168;&#x90FD;&#x6307;&#x5411;&#x76F8;&#x540C;&#x7684;x&#x548C;&#x76F8;&#x540C;&#x7684;tmp&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5404;&#x81EA;&#x6709;&#x4E00;&#x4EFD;&#x526F;&#x672C;&#x3002;)</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x9762;&#x7684;x&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x9762;&#x503C;(&#x503C;&#x4F20;&#x9012;)&#xFF0C;&#x548C;JS&#x91CC;&#x5176;&#x4ED6;&#x7684;&#x5B57;&#x9762;&#x503C;&#x4E00;&#x6837;&#xFF0C;&#x5F53;&#x8C03;&#x7528;foo&#x65F6;&#xFF0C;&#x5B9E;&#x53C2;x&#x7684;&#x503C;&#x88AB;&#x590D;&#x5236;&#x4E86;&#x4E00;&#x4EFD;&#xFF0C;&#x590D;&#x5236;&#x7684;&#x90A3;&#x4E00;&#x4EFD;&#x4F5C;&#x4E3A;&#x4E86;foo&#x7684;&#x53C2;&#x6570;x&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x90A3;&#x4E48;&#x95EE;&#x9898;&#x6765;&#x4E86;&#xFF0C;JS&#x91CC;&#x5904;&#x7406;object&#x65F6;&#x662F;&#x7528;&#x5230;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x4F60;&#x8C03;&#x7528;foo&#x65F6;&#x4F20;&#x9012;&#x4E00;&#x4E2A;object&#xFF0C;foo&#x51FD;&#x6570;return&#x7684;&#x95ED;&#x5305;&#x4E5F;&#x4F1A;&#x5F15;&#x7528;&#x6700;&#x521D;&#x90A3;&#x4E2A;object&#xFF01;</p>
+<pre><code class="lang-js"> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x</span>) </span>{
+ <span class="hljs-keyword">var</span> tmp = <span class="hljs-number">3</span>;
+ <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">y</span>) </span>{
+     alert(x + y + tmp);
+     x.memb = x.memb ? x.memb + <span class="hljs-number">1</span> : <span class="hljs-number">1</span>;
+     alert(x.memb);
+     }
+ }
+ <span class="hljs-keyword">var</span> age = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">2</span>);
+ <span class="hljs-keyword">var</span> bar = foo(age); <span class="hljs-comment">// bar &#x73B0;&#x5728;&#x662F;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x4E86;age&#x7684;&#x95ED;&#x5305;</span>
+ bar(<span class="hljs-number">10</span>);
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0D;&#x51FA;&#x6211;&#x4EEC;&#x610F;&#x6599;&#xFF0C;&#x6BCF;&#x6B21;&#x8FD0;&#x884C;bar(10)&#xFF0C;x.memb&#x90FD;&#x4F1A;&#x81EA;&#x52A0;1&#x3002;&#x4F46;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;x&#x6BCF;&#x6B21;&#x90FD;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;object&#x53D8;&#x91CF;&#x2014;&#x2014;age&#xFF0C;&#x8FD0;&#x884C;&#x4E24;&#x6B21;bar(10)&#x540E;&#xFF0C;age.memb&#x4F1A;&#x53D8;&#x6210;2.</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x4E0D;&#x7528;return&#x5173;&#x952E;&#x5B57;&#x7684;&#x95ED;&#x5305;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">closureExample</span>(<span class="hljs-params">objID, text, timedelay</span>) </span>{ 
+     setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ 
+         <span class="hljs-built_in">document</span>.getElementById(objID).innerHTML = text; 
+     }, timedelay); 
+ } 
+ closureExample(&#x2018;myDiv&#x2019;, &#x2018;Closure is created&#x2019;, <span class="hljs-number">500</span>);
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;JS&#x91CC;&#x7684;function&#x80FD;&#x8BBF;&#x95EE;&#x5B83;&#x4EEC;&#x7684;&#xFF1A;</p>
+<ol>
+<li><p>&#x53C2;&#x6570;</p>
+</li>
+<li><p>&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x6216;&#x51FD;&#x6570;</p>
+</li>
+<li><p>&#x5916;&#x90E8;&#x53D8;&#x91CF;&#xFF08;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1F;&#xFF09;&#xFF0C;&#x5305;&#x62EC;</p>
+<p>3.1 &#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5305;&#x62EC;DOM&#x3002;</p>
+<p>3.2 &#x5916;&#x90E8;&#x51FD;&#x6570;&#x7684;&#x53D8;&#x91CF;&#x6216;&#x51FD;&#x6570;&#x3002;</p>
+</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8BBF;&#x95EE;&#x4E86;&#x5B83;&#x7684;&#x5916;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x95ED;&#x5305;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6CE8;&#x610F;&#xFF0C;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x4E0D;&#x662F;&#x5FC5;&#x9700;&#x7684;&#x3002;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x4E00;&#x4E2A;&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x7EF4;&#x6301;&#xFF08;keep alive&#xFF09;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x3002;&#x5728;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x548C;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x6700;&#x7EC8;&#x9000;&#x51FA;&#xFF1B;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x5728;&#x5B83;&#x9000;&#x51FA;&#x540E;&#x5374;&#x6CA1;&#x6709;&#x9000;&#x51FA;&#xFF0C;&#x90A3;&#x4E48;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x5C31;&#x7EF4;&#x6301;&#x4E86;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x7684;&#x5C40;&#x90E8;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x4F8B;&#x5B50;&#x5C31;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4ECE;&#x6280;&#x672F;&#x4E0A;&#x6765;&#x8BB2;&#xFF0C;&#x5728;JS&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;function&#x90FD;&#x662F;&#x95ED;&#x5305;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x603B;&#x662F;&#x80FD;&#x8BBF;&#x95EE;&#x5728;&#x5B83;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x95ED;&#x5305;&#x7ECF;&#x5E38;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x542B;&#x6709;&#x9690;&#x85CF;&#x6570;&#x636E;&#x7684;&#x51FD;&#x6570;&#xFF08;&#x4F46;&#x5E76;&#x4E0D;&#x603B;&#x662F;&#x8FD9;&#x6837;&#xFF09;&#x3002;</p>
+<pre><code class="lang-js"> <span class="hljs-keyword">var</span> db = (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+ <span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9690;&#x85CF;&#x7684;object, &#x8FD9;&#x4E2A;object&#x6301;&#x6709;&#x4E00;&#x4E9B;&#x6570;&#x636E;</span>
+ <span class="hljs-comment">// &#x4ECE;&#x5916;&#x90E8;&#x662F;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;object&#x7684;</span>
+ <span class="hljs-keyword">var</span> data = {};
+ <span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x51FD;&#x6570;, &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x8BBF;&#x95EE;data&#x7684;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;</span>
+ <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">key, val</span>) </span>{
+     <span class="hljs-keyword">if</span> (val === <span class="hljs-literal">undefined</span>) { <span class="hljs-keyword">return</span> data[key] } <span class="hljs-comment">// get</span>
+     <span class="hljs-keyword">else</span> { <span class="hljs-keyword">return</span> data[key] = val } <span class="hljs-comment">// set</span>
+     }
+ <span class="hljs-comment">// &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x533F;&#x540D;&#x65B9;&#x6CD5;</span>
+ <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5185;&#x90E8;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x95ED;&#x5305;</span>
+ })();
+
+ db(<span class="hljs-string">&apos;x&apos;</span>); <span class="hljs-comment">// &#x8FD4;&#x56DE; undefined</span>
+ db(<span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// &#x8BBE;&#x7F6E;data[&apos;x&apos;]&#x4E3A;1</span>
+ db(<span class="hljs-string">&apos;x&apos;</span>); <span class="hljs-comment">// &#x8FD4;&#x56DE; 1</span>
+ <span class="hljs-comment">// &#x6211;&#x4EEC;&#x4E0D;&#x53EF;&#x80FD;&#x8BBF;&#x95EE;data&#x8FD9;&#x4E2A;object&#x672C;&#x8EAB;</span>
+ <span class="hljs-comment">// &#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5B83;&#x7684;&#x6210;&#x5458;</span>
+</code></pre>
+<h2 id="&#x95ED;&#x5305;&#x7684;&#x603B;&#x7ED3;">&#x95ED;&#x5305;&#x7684;&#x603B;&#x7ED3;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;(1) &#x95ED;&#x5305;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x5206;&#x6790;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x6765;&#x7B80;&#x5316;&#x7528;&#x6237;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x5728;&#x4E0D;&#x77E5;&#x6653;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FBE;&#x5230;&#x4ED6;&#x7684;&#x76EE;&#x7684;&#xFF1B;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;(2) &#x7F51;&#x4E0A;&#x4E3B;&#x6D41;&#x7684;&#x5BF9;&#x95ED;&#x5305;&#x5256;&#x6790;&#x7684;&#x6587;&#x7AE0;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x548C;&#x95ED;&#x5305;&#x539F;&#x5219;&#x53CD;&#x5411;&#x800C;&#x9A70;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x77E5;&#x9053;&#x95ED;&#x5305;&#x7EC6;&#x8282;&#x624D;&#x80FD;&#x7528;&#x597D;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x95ED;&#x5305;&#x662F;&#x8BBE;&#x8BA1;&#x5931;&#x8D25;&#x7684;&#xFF1B;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../刘沈/刘沈-2016.12.16/scope.html" class="navigation navigation-prev " aria-label="Previous page: 刘沈-scope(2)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../目录/第4周.html" class="navigation navigation-next " aria-label="Next page: 第4周(2016-12-23)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"宋健-javascript之闭包","level":"1.5.2","depth":2,"next":{"title":"第4周(2016-12-23)","level":"1.6","depth":1,"path":"目录/第4周.md","ref":"目录/第4周.md","articles":[{"title":"郭乃豪-Bootstrap_CSS","level":"1.6.1","depth":2,"path":"郭乃豪/郭乃豪-2016.12.23/Bootstrap_CSS.md","ref":"郭乃豪/郭乃豪-2016.12.23/Bootstrap_CSS.md","articles":[]},{"title":"宋健-javascript作用域","level":"1.6.2","depth":2,"path":"宋健/宋健-2016.12.23/javascript作用域.md","ref":"宋健/宋健-2016.12.23/javascript作用域.md","articles":[]}]},"previous":{"title":"刘沈-scope(2)","level":"1.5.1","depth":2,"path":"刘沈/刘沈-2016.12.16/scope.md","ref":"刘沈/刘沈-2016.12.16/scope.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"宋健/宋健-2016.12.16/javascript之闭包.md","mtime":"2017-02-16T01:42:19.280Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T03:03:37.168Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

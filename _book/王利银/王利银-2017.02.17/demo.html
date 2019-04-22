@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">  
+		<title></title>  
+		<!-- <script src="angular-1.0.0.js"></script> -->
+		<script src="angular-1.2.14.js"></script>
+	</head>
+
+	<body ng-app="App">
+		<div ng-controller="parentController as parentCtrl">
+			{{a}} {{parentCtrl.b}} 
+			<div ng-controller="childController as childCtrl">
+				{{a}} {{parentCtrl.b}} {{c}} {{childCtrl.d}}
+			</div>  
+		</div>
+
+		<script>	
+			var app = angular.module('App',['parent']);	
+			var appParent = angular.module('parent',['child']);
+			var appChild = angular.module('child',[]);
+			appParent.controller('parentController', ['$scope',function($scope){
+				$scope.a = '111';
+				this.b = '222'; 
+				console.log($scope);
+				console.log(this);
+			}]);
+			appChild.controller('childController', ['$scope',function($scope){
+				$scope.c = '333';
+				this.d = '444'; 
+				$scope.a = '555'; 
+				console.log($scope);
+				console.log(this);
+			}]);
+		</script>
+	</body>
+</html>
